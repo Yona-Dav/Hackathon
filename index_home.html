@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style_menu.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href='index_contact.html'>Contact</a></li>
+            <li class='levels'><a href=#>Levels</a>
+                <ul class='under'>
+                    <li><a href='index_easy.html'>Easy</a></li>
+                    <li><a href='index_difficult.html'>Difficult</a></li>
+                    <li><a href='index_hard.html'>Hard</a></li>
+                </ul>
+            </li>
+            <li><a href='index_home.html'>Menu</a></li>
+        </ul>
+    </nav>
+   <section id="all">
+       <header><h1>HANGMAN GAME - The rules</h1></header>
+       <article>
+        <p>Hangman is a simple word guessing game</p>
+        <p><span>The Goal:  </span>Guess the word before your man gets hung!</p>
+        <p><span>How to play?  </span> The computer thinks of a word and the player tries to guess what is one letter at a time. The computer draws a number of dash equivalent to the number of letters in the word. If a player press or enter a letters that occurs in the word, the computer fills in the blanks with that letter in the right places.
+        If the word does not contain the entered/pressed letter, the computer draws one element of a hangman's gallows and the letter "desapears". As the game progresses, a segment of the gallows and of a victim is added for every pressed/entered letter not in the word.</p>
+        <p><span>The levels:</span>
+        <ul>
+            <li>Easy : The words are simple and the number of incorrect guesses before the game ends is 10.</li>
+            <li>Difficult : The words are difficult to guess and the number of incorrect guesses before the game ends is 6.</li>
+            <li>Hard : The words are difficult to guess, the number of incorrect guesses before the game ends is 6 and you have 1:30 to guess the word. </li>
+        </ul>
+        </p>
+        <a href="index_easy.html">Play the game - Easy level</a>
+        <a href="index_difficult.html">Play the game - Difficult level</a>
+        <a href="index_hard.html">Play the game - Hard level</a>
+
+       </article>
+   </section>
+</body>
+</html>

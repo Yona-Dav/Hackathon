@@ -1,0 +1,262 @@
+body{
+    background-image: url('https://e7.pngegg.com/pngimages/851/3/png-clipart-blackboards-and-blackboard-sassafras-teachers-day-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color:white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    top: 0px;
+    position: fixed;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: right;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+.under{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .under{
+    display: block;
+    background-color: transparent;
+}
+.under li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.under a{
+    padding: 10px;
+    border-bottom: none;
+}
+.under a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.levels > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+#container{
+    height: 97vh;
+    width: 97vw;
+    display:flex;
+    flex-direction: column;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 5fr 3fr;
+
+}
+
+header{
+    grid-column: span 2;
+    display:block;
+    margin:auto;
+    font-size: 30px;
+    text-decoration: underline white;
+    margin-top: 10px;
+}
+
+#playGame{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 30px;
+    margin-top: 160px;
+
+}
+#alphabet{
+    grid-column: span 2;
+    display:flex;
+    flex:inline-block;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(13, 1fr);
+
+}
+
+.letter{
+    border:solid black 2px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    
+}
+
+.letter:hover{
+    transform: scale(1.2);
+}
+
+#wordToGuess{
+    font-size: 80px;
+}
+
+
+#draw{
+    position:relative;
+}
+
+#drawSide{
+    position:relative;
+}
+
+#guessRemain{
+    position:absolute;
+    left:50px;
+    font-size: 25px;
+}
+
+#basisBottom{
+    height: 5px;
+    width: 250px;
+    background-color: white;
+    position:absolute;
+    top:350px;
+    left:200px;
+}
+
+#basisLeft{
+    height: 300px;
+    width: 5px;
+    background-color: white;
+    position:absolute;
+    left:250px;
+    top:50px;
+}
+
+#basisTop{
+    height: 5px;
+    width: 300px;
+    background-color: white;
+    position:absolute;
+    top:50px;
+    left:190px;
+}
+
+#rope{
+    height: 30px;
+    width: 5px;
+    background-color: white;
+    position:absolute;
+    top:50px;
+    left:490px;
+}
+
+#head{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 90px;
+    position:absolute;
+    top:80px;
+    left:465px;
+}
+
+#body{
+    height: 120px;
+    width: 5px;
+    background-color: white;
+    position:absolute;
+    top:130px;
+    left:490px;
+}
+
+#armLeft{
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    position:absolute;
+    top:170px;
+    left:445px;
+    transform: rotate(30deg)
+}
+
+#armRight{
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    position:absolute;
+    top:170px;
+    left:490px;
+    transform: rotate(-30deg)
+}
+
+#legLeft{
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    position:absolute;
+    top:265px;
+    left:452px;
+    transform: rotate(-50deg)
+}
+
+#legRight{
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    position:absolute;
+    top:265px;
+    left:482px;
+    transform: rotate(50deg)
+}
+
+#wordToGuess{
+    position: absolute;
+    top:220px;
+}
+
+#point{
+    position:absolute;
+    right:100px;
+    font-size: 30px;
+}
+
+#chgWord{
+    position:absolute;
+    right:100px;
+    font-size: 20px;
+    bottom:200px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+

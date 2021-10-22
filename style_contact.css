@@ -1,0 +1,105 @@
+body{
+    background-image: url('https://e7.pngegg.com/pngimages/851/3/png-clipart-blackboards-and-blackboard-sassafras-teachers-day-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color:white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    top: 0px;
+    position: fixed;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: right;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+.under{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .under{
+    display: block;
+    background-color: transparent;
+}
+.under li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.under a{
+    padding: 10px;
+    border-bottom: none;
+}
+.under a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.levels > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+
+#all{
+    height: 97vh;
+    width: 97vw;
+    box-sizing: border-box;
+}
+
+header{
+    font-size: 30px;
+    text-decoration: underline white;
+    text-align: center;
+}
+
+
+form {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+i{
+    font-size:30px;
+    color: white;
+    margin: 20px;
+}
+
+#submit{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+}
+
+#submit:hover{
+    transform: scale(1.2);
+}
