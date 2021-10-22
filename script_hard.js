@@ -130,7 +130,7 @@ function playAgain(){
                 i.style.opacity = '1';}
                 wordGuess = document.getElementById('wordToGuess');
                 wordSide.removeChild(wordGuess);
-                count =10;
+                count =6;
                 return displayWord();}
         else{
             alert("No problem, Have a good day");
@@ -148,7 +148,7 @@ function anOtherWord(){
         i.style.opacity = '1';}
         wordGuess = document.getElementById('wordToGuess');
         wordSide.removeChild(wordGuess);
-        count =10;
+        count =6;
         clearInterval(myInterval);
         let frames = document.getElementsByClassName('hangman');
         for(let i=frames.length-1; i>-1; i-- ){
