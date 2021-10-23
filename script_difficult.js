@@ -109,7 +109,7 @@ function playAgain(){
                 count =6;
                 return displayWord();}
         else{
-            alert("No problem, Have a good day");
+            document.location.href='index_contact.html';
         }
 }
 
